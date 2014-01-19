@@ -23,7 +23,15 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'lib'))
 from docopt import docopt
 
 
-COVERTOR = os.path.join(os.path.dirname(__file__), 'wkhtmltopdf-amd64')
+def guess_convertor():
+    def aux(name):
+        return os.path.join(os.path.dirname(__file__), name)
+
+    possible_vers = ['wkhtmltopdf-amd64', 'wkhtmltopdf-i386']
+    return [cand for cand in
+            [os.path.join(os.path.dirname(__file__), name)
+             for name in possible_vers]
+            if os.path.isfile(cand)][0]
 
 
 def compile_to_html(source, toc=False):
@@ -58,7 +66,7 @@ def write_html(html, name, script_name):
 
 
 def generate_pdf(for_print, output, options):
-    cmd = COVERTOR + ' --encoding utf-8 -s A4 ' + \
+    cmd = guess_convertor() + ' --encoding utf-8 -s A4 ' + \
         (options + ' ' if options else '') + \
         './{0} --javascript-delay 1000 {1}'.format(for_print, output)
     print cmd
