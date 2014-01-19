@@ -1,0 +1,85 @@
+body {
+    margin: auto;
+    font-size: 1px;
+}
+
+h1,h2,li,ul,p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h1,h2,h3 {
+    /*font-family: Arial;*/
+    font-family: "Open Sans";
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    white-space: wrap;
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+h2:first-of-type {
+    margin-top: 60px;
+}
+
+h3 {
+    font-weight: normal;
+    display: inline-block;
+    width: 20%;
+}
+
+ul>li {
+    list-style: none;
+}
+
+ul>li:before {
+    content: '- ';
+}
+
+h3,p,ul {
+    vertical-align: top;
+    margin-top: 0;
+}
+
+h3,p,li {
+    font-size: 12px;
+}
+
+p + p, ul + p, p + ul, h2 + p, h2 + ul, h2 + ol {
+    margin-left: 20%;
+}
+
+h2 + ul {
+    padding-left: 0;
+}
+
+p {
+    display: inline-block;
+    width: 79%;
+}
+
+p,li {
+    font-family: "Open Sans";
+    /*font-family: "Times New Roman";*/
+    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+}
+
+p,ul {
+    padding-left: 0;
+}
+
+h3,h2 + p,h3 + p, p + p {
+    margin-top: 10px;
+}
+
+ul>li:first-child, h2 + h3 + p, h2 + h3 + ul > li, h2 + p, h2 + h3, h2 + ul, p + ul {
+    margin-top: 0;
+}

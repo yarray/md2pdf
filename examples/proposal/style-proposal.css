@@ -1,0 +1,112 @@
+body {
+    margin: auto;
+    font-size: 1pt;
+}
+
+h1,h2,li,ul,p {
+    margin-bottom: 0;
+    margin-top: 0;
+/*    hyphens: auto;*/
+    /*-webkit-hyphens: auto;*/
+}
+
+h1,h2 {
+    /*font-family: Arial;*/
+    font-family: "Open Sans Light";
+}
+
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 27pt;
+    font-weight: lighter;
+    white-space: wrap;
+    margin-top: 60px;
+}
+
+h1:first-of-type {
+    margin-top: 0;
+}
+
+h1 + ul>li:last-child {
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+li > ul,  p + ul {
+    margin-top: 10px;
+}
+
+.toc ul > li:before, p + ul > li:before {
+    content: "\25b7";
+    margin-right: 5px;
+}
+
+li > ul {
+    padding: 0 20px;
+}
+
+ul > li {
+    margin-bottom: 10px;
+}
+
+ul > li:last-child {
+    margin-bottom: 0;
+}
+
+p+ul>li {
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 20px;
+    padding-left: 0;
+    line-height: 20px
+}
+
+li > p:first-child {
+    margin-top: 0;
+}
+
+h2,p,li {
+    font-size: 12pt;
+}
+
+p,li {
+    /*font-family: "Open Sans";*/
+    font-family: "Times New Roman";
+    /*font-family: "Contra";*/
+    /*font-family: "Titillium";*/
+}
+
+h2+p {
+    margin-top: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 15pt;
+    font-family: "Open Sans";
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.toc a {
+    color: inherit;
+    text-decoration: none;
+}
+
+blockquote {
+    color: #666666;
+    text-decoration: underline;
+}
+
+img[alt="pre exp"] {
+    height: 800px;
+}

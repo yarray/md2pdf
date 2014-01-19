@@ -1,0 +1,55 @@
+body {
+    margin: auto;
+    font-size: 1px;
+}
+
+h1,h2,li,ul,p {
+    margin-bottom: 0;
+    margin-top: 0;
+/*    hyphens: auto;*/
+    /*-webkit-hyphens: auto;*/
+}
+
+h1,h2,h3 {
+    /*font-family: Arial;*/
+    font-family: "Open Sans";
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    white-space: wrap;
+    font-weight: normal;
+    margin-top: 60px;
+}
+
+h1 + ul>li:last-child {
+    margin-top: 20px;
+}
+
+ul>li {
+    list-style: none;
+}
+
+p {
+    margin-top: 20px;
+}
+
+li > p:first-child {
+    margin-top: 0;
+}
+
+h2,p,li {
+    font-size: 12px;
+}
+
+p,li {
+    font-family: "Open Sans";
+}
+
+p,ul {
+    padding-left: 0;
+}

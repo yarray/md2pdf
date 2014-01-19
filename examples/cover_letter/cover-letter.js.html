@@ -1,0 +1,12 @@
+<script src="./Hyphenator/Hyphenator.js" type="text/javascript"></script>
+<script type="text/javascript">
+window.onload = function(){
+    (function() {
+        var ps = document.getElementsByTagName('p');
+        for (var i in ps) {
+            ps[i].className += 'hyphenate';
+        }
+    })();
+    Hyphenator.run();
+}
+</script>
